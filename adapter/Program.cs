@@ -15,9 +15,6 @@ class Program
         converter = adapterFactory.getAdapter(triangle);
         CircleService adaptedTriangle = converter.ConvertToCircle();
 
-        SquaretoCircleAdapter adapter = new SquaretoCircleAdapter(square);
-        CircleService adaptedCircle = adapter.ConvertToCircle();
-
         Console.WriteLine("Passt der Kreis ins Loch? " + Fit(circle.radius));
         Console.WriteLine("Passt das Dreieck ins Loch? " + Fit(adaptedTriangle.radius));
         Console.WriteLine("Passt das Viereck ins Loch? " + Fit(adaptedSquare.radius));
